@@ -1,66 +1,44 @@
-## Foundry
+# Foundry 101 Smart Contract Implementations
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Welcome to my repository for the Foundry 101 course by Cyfrin Updraft. This project encompasses my implementations of smart contracts and the corresponding tools and practices covered in the course.
 
-Foundry consists of:
+## Overview
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+The Foundry 101 course is a comprehensive introduction to developing and testing smart contracts using Foundry. The course covers various fundamental and advanced topics, including:
 
-## Documentation
+- **Basics of Deploying Smart Contracts**: Understanding how to deploy smart contracts to the blockchain.
+- **Unit Testing**: Writing and executing unit tests to ensure the correctness of individual components.
+- **Integration Testing**: Testing the interaction between different components to validate the system as a whole.
+- **Fuzzing**: Implementing fuzz testing to detect vulnerabilities and edge cases.
+- **Makefiles**: Utilizing Makefiles to streamline build and deployment processes.
+- **Modularity**: Structuring smart contracts and code for reusability and maintainability.
 
-https://book.getfoundry.sh/
+## Getting Started
 
-## Usage
+To get started with the project, you'll need to have Foundry installed. Follow the steps below to set up and run the project:
 
-### Build
+1. **Install Foundry**: If you haven't already, install Foundry by following the instructions on the [Foundry GitHub page](https://github.com/gakonst/foundry).
 
-```shell
-$ forge build
-```
+2. **Clone the Repository**:
 
-### Test
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
 
-```shell
-$ forge test
-```
+3. **Build the Project**:
 
-### Format
+   ```bash
+    forge build
+   ```
 
-```shell
-$ forge fmt
-```
+4. **Run Tests**:
 
-### Gas Snapshots
+   ```bash
+    forge test
+   ```
 
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+5. **Deploy Contracts**:
+   ```bash
+   make deploy
+   ```
