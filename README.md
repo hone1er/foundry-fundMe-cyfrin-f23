@@ -10,6 +10,7 @@ The Foundry 101 course is a comprehensive introduction to developing and testing
 - **Unit Testing**: Writing and executing unit tests to ensure the correctness of individual components.
 - **Integration Testing**: Testing the interaction between different components to validate the system as a whole.
 - **Fuzzing**: Implementing fuzz testing to detect vulnerabilities and edge cases.
+- **Scripting**: Writing scripts to automate tasks and interact with smart contracts.
 - **Makefiles**: Utilizing Makefiles to streamline build and deployment processes.
 - **Modularity**: Structuring smart contracts and code for reusability and maintainability.
 
